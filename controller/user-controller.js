@@ -6,7 +6,7 @@ require('dotenv').config()
 const handleSignupUser = async (req, res) => {
     try {
         const { name, email, password } = req.body;
-        console.log(name, email, password);
+        // console.log(name, email, password);  
         await User.create({
             name, email, password
         });
